@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-500: #CC0000;
+  --color-brand-600: #B30000;
+  --color-brand-700: #990000;
+  --color-navy: #1a2b4a;
+  --color-bg-page: #fafafa;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #1a2b4a;
+  --color-text-secondary: rgba(26, 43, 74, 0.65);
+  --color-text-tertiary: rgba(26, 43, 74, 0.4);
+  --color-border: rgba(26, 43, 74, 0.1);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: linear-gradient(to bottom, #fffef4 0px, var(--color-bg-page) 600px) no-repeat;
+  color: var(--color-text-primary);
+  font-feature-settings: "cv01", "cv02", "cv03", "cv04";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.canvas-grid {
+  position: relative;
+}
+
+.canvas-grid::before,
+.canvas-grid::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(26, 43, 74, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.canvas-grid::before {
+  left: calc(50% - 576px);
+}
+
+.canvas-grid::after {
+  right: calc(50% - 576px);
+}
+
+@media (max-width: 1152px) {
+  .canvas-grid::before {
+    left: 1.5rem;
+  }
+  .canvas-grid::after {
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .canvas-grid::before,
+  .canvas-grid::after {
+    display: none;
+  }
+}
+
+.section-divider {
+  width: 100vw;
+  height: 1px;
+  background: rgba(26, 43, 74, 0.07);
+  margin-left: calc(-50vw + 50%);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.hero-headline {
+  background: linear-gradient(
+    90deg,
+    #1a2b4a 0%,
+    #1a2b4a 40%,
+    #CC0000 50%,
+    #1a2b4a 60%,
+    #1a2b4a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s ease-in-out 1s 1 both;
+}
