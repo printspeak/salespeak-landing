@@ -28,10 +28,10 @@ export default function Nav() {
         <Link href="/" className="flex items-center">
           <Image
             src="/images/salespeak-logo.png"
-            alt="MBE Sales Speak"
-            width={140}
+            alt="Sales Speak"
+            width={101}
             height={41}
-            className="w-[140px] h-auto"
+            className="w-[101px] h-auto"
           />
         </Link>
 
