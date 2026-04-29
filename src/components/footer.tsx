@@ -28,9 +28,9 @@ export default function Footer() {
               <Image
                 src="/images/salespeak-logo.png"
                 alt="MBE Sales Speak"
-                width={180}
-                height={26}
-                className="w-[180px] h-auto"
+                width={140}
+                height={41}
+                className="w-[120px] h-auto"
               />
               <p className="mt-3 text-xs text-navy/40 max-w-[200px]">
                 Sales intelligence for print businesses.
