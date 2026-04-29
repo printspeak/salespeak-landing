@@ -31,7 +31,7 @@ export default function Nav() {
             alt="Sales Speak"
             width={226}
             height={82}
-            className="w-[130px] h-auto"
+            className="w-[160px] h-auto"
           />
         </Link>
 

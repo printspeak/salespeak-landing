@@ -30,7 +30,7 @@ export default function Footer() {
                 alt="Sales Speak"
                 width={226}
                 height={82}
-                className="w-[110px] h-auto"
+                className="w-[140px] h-auto"
               />
               <p className="mt-3 text-xs text-navy/40 max-w-[200px]">
                 Sales intelligence for print businesses.
