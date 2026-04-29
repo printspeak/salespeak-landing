@@ -29,9 +29,9 @@ export default function Nav() {
           <Image
             src="/images/salespeak-logo.png"
             alt="Sales Speak"
-            width={101}
-            height={41}
-            className="w-[101px] h-auto"
+            width={226}
+            height={82}
+            className="w-[130px] h-auto"
           />
         </Link>
 
