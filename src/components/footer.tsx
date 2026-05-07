@@ -12,7 +12,7 @@ const columns = [
   {
     title: "Company",
     links: [
-      { label: "Contact", href: "/#contact" },
+      { label: "Contact us", href: "/#contact" },
       { label: "Print Speak", href: "https://printspeak.com" },
     ],
   },
